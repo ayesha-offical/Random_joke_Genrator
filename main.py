@@ -25,7 +25,16 @@ def main():
     if st.button("Generate Joke😁"):
         joke = get_random_joke()
         st.info(joke)
+    st.divider()
 
+    st.markdown(
+        """
+    <div style ='text-align:center;'>
+        <p>Joke From Offical Joke Api</p>
+        <p>Build with ❤️ by <a href='https://github.com/ayesha-offical'>Ayehsa Faisal</a></p>
+    </div>
+""", 
+       unsafe_allow_html=True,
 if __name__ == "__main__":
     main()
 
